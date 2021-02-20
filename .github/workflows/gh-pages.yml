@@ -27,7 +27,7 @@ jobs:
         
       # github pages
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.0.0  # 不確定 # ad-m/github-push-action@master
+        uses: ad-m/github-push-action@master  # 不確定 # 
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BASE_BRANCH: main # the action should deploy from.
