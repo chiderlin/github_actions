@@ -30,8 +30,7 @@ jobs:
         uses: ad-m/github-push-action@master  # 不確定 # 
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          base_branch: main # the action should deploy from.
           branch: gh-pages # the action should deploy to.
-          folder: ./python_repos.svg
+          force: true
           # BUILD_SCRIPT: pip install .[all] && touch ./python_repos.svg
 
