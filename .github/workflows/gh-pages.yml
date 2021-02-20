@@ -28,7 +28,7 @@ jobs:
       # github pages
       - name: Deploy
         uses: ad-m/github-push-action@master  # 不確定 # 
-        env:
+        with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           base_branch: main # the action should deploy from.
           branch: gh-pages # the action should deploy to.
