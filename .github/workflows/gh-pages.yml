@@ -27,11 +27,11 @@ jobs:
         
       # github pages
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@4.0.0 # 不確定
+        uses: JamesIves/github-pages-deploy-action@4.0.0  # 不確定 # ad-m/github-push-action@master
         env:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           BASE_BRANCH: main # the action should deploy from.
-          BRANCH: gh-pages-branch # the action should deploy to.
+          BRANCH: gh-pages # the action should deploy to.
           FOLDER: ./python_repos.svg
           # BUILD_SCRIPT: pip install .[all] && touch ./python_repos.svg
 
