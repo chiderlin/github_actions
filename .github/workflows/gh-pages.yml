@@ -32,6 +32,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages # the action should deploy to.
           force: true
-          directory: ./python_repos.svg
           # BUILD_SCRIPT: pip install .[all] && touch ./python_repos.svg
 
