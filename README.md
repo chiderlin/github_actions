@@ -1,5 +1,3 @@
-# Github_actions
-github actions + github pages demo
 
 Actions-gh-pages
 1. 必須建立.github/workflows資料夾
